@@ -14,7 +14,8 @@
   },
   "main": "main.js",
   "scripts": {
-    "build": "electron-packager . Example --platform=win32 --arch=all --version=0.36.0 --icon=Icon.icns",
+    "build_windows": "electron-packager . Example --platform=win32 --arch=all --version=0.36.0 --icon=Icon.icns",
+    "build_mac": "electron-packager . Example --platform=darwin --arch=all --version=0.36.0 --icon=Icon.icns",
     "start": "electron ."
   }
 }
