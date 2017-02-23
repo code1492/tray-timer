@@ -56,3 +56,8 @@ typings/
 
 # dotenv environment variables file
 .env
+
+# build folders
+Timer-win32-x64/
+Timer-win32-ia32/
+Timer-darwin-x64/
