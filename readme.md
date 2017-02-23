@@ -10,7 +10,7 @@
  * HTML
  * jQuery
 
-## Run/Build source
+## Run from source
 
 
 Prepaire for running app  
@@ -22,15 +22,6 @@ Running app
 ```
 npm run start 
 ```
-Build for windows
-```
-npm run build_windows
-```
-Build for mac
-```
-npm run build_mac
-```
-
 &nbsp;
 ___
 
