@@ -1,7 +1,29 @@
-# example menubar app
+# Desktop timer
 
-## instructions
+## Instructions
+ * Timer app for supporting issue tracking system (JIRA, REDMINE etc)
+ 
+ ## Tech stack
+ 
+ * electron
+ * Vue
+ * HTML
+ * jQuery
 
-- run `npm install`
-- run `npm run build` to make Example.app
-- run `npm start` to run app from CLI without building Example.app
+## Run from source
+
+
+Prepaire for running app  
+```
+npm install
+```
+Running app
+
+```
+npm run start 
+```
+&nbsp;
+___
+
+This is [on GitHub](https://github.com/code1492/tray-timer)
+
