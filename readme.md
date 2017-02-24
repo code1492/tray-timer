@@ -13,6 +13,8 @@
 ## Run/Build source
 
 
+First, [install Nodejs(NPM)](https://nodejs.org/ko/)
+
 Prepaire for running app  
 ```
 npm install
