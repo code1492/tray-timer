@@ -1,14 +1,14 @@
 # Desktop timer
 
 ## Instructions
- * Timer app for supporting issue tracking system (JIRA, REDMINE etc)
- 
- ## Tech stack
- 
- * electron
- * Vue
- * HTML
- * jQuery
+* Timer app for supporting issue tracking system (JIRA, REDMINE etc)
+
+## Tech stack
+
+* electron
+* Vue
+* HTML
+* jQuery
 
 ## Run/Build source
 
