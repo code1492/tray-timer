@@ -46,7 +46,9 @@
   <script type="x-template" id="item-compo-tmpl"> 
     <div class="static-grid">
       <div class="static-grid-cell static-grid-cell-msg" >
-        <p class="static-grid-cell-msg-time" @click="$parent.copyClick">{{ $parent.secondsToTimeString(item.durationTime) }} <span>{{ dateFormat(item.startTime) }}</span></p>
+        <p class="static-grid-cell-msg-time">
+          <span @click="$parent.copyClick">{{ $parent.secondsToTimeString(item.durationTime) }}</span>
+        </p>
         <span>{{ item.msg }}</span>
       </div>
       <div class="static-grid-cell static-grid-cell-btn">
