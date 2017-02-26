@@ -1,0 +1,151 @@
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  color: #777;
+  font-weight: bold;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  padding: 0;
+}
+.static-grid {
+  display: table;
+  width: 100%;
+}
+.static-grid:before {
+  display: table-row;
+}
+.static-grid > .static-grid-cell {
+  display: table-cell;
+  padding:5px;
+  vertical-align: middle;
+}
+.static-grid-cell-bar {
+  color: #cccccc;
+}
+.static-grid-cell-msg {
+  text-overflow: ellipsis;
+  word-break: break-all;
+  max-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.static-grid-cell-msg-time {
+  margin: 0px;
+  color: #999;
+  font-weight: normal;
+  font-size: 12px;
+}
+.static-grid-cell-btn {
+  text-align: right;
+  width: 48px;
+  min-width: 48px;
+  color: #aaa;
+  font-size: 10px;
+}
+.static-grid > .static-grid-cell + .static-grid-cell {
+  padding-left: 0;
+}
+.static-grid-cell-btns {
+  width: 40px;
+}
+.static-grid-form {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  border-top: 1px solid #cccccc;
+}
+.btn {
+  height: 26px;
+  width: 100%;
+  background: none;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+}
+.btn.btn-close {
+  vertical-align: middle;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  border: none;
+  background: url('../assets/cancel.svg') 50% 50% no-repeat;
+}
+.btn.btn-mini {
+  width: 16px;
+  height: 16px;
+  border: none;
+}
+.btn.btn-add {
+  border: none;
+  background: url('../assets/stopwatch.svg') 50% 50% no-repeat;
+}
+.btn.btn-play {
+  background: url('../assets/play.svg');
+}
+.btn.btn-pause {
+  background: url('../assets/pause.svg');
+}
+.btn.btn-delete {
+  background: url('../assets/delete.svg');
+}
+.btn.btn-add:hover,
+.btn.btn-play:hover,
+.btn.btn-pause:hover,
+.btn.btn-delete:hover {
+  animation: rubberBand 0.8s;
+}
+.static-grid-form input {
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 26px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.list-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20px;
+  bottom: 40px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.item {
+  vertical-align: middle;
+  padding: 8px;
+  border-bottom: 1px solid #cccccc;
+  animation: bounceInRight .6s;
+}
+.top {
+  height: 20px;
+  background: #ff8f00;
+  text-align: right;
+  padding: 0px 8px;
+} 
+.inpine-helper {
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
