@@ -1,4 +1,4 @@
-var app = require('app');
+var app = require('electron').app;
 var menubar = require('menubar');
 
 /* setting menu */

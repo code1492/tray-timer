@@ -60,6 +60,7 @@ var app = new Vue ({
       
       setSelectionRange(el, 0, el.length);
       this.copy(); 
+	  alert('copied on clipboard!');
     },
     close: function () {
        close();

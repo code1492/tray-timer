@@ -31,11 +31,7 @@
     <div class="static-grid static-grid-form">
       <div class="static-grid-cell">
         <div>
-<<<<<<< HEAD
-          <input type="text" v-model="msg">
-=======
           <input type="text" v-model="msg" @keydown.enter="addItem">
->>>>>>> a65b1cd6a10c19ebea937b9f9f550a847943e99f
         </div>
       </div>
       <div class="static-grid-cell static-grid-cell-btns">
@@ -46,101 +42,6 @@
     </div>
           
   </div>
-  
-<<<<<<< HEAD
-  <script>
-    var getCurrentWindow = getCurrentWindow || function(){}
-    var require = require || function(){return {remote:getCurrentWindow }};
-    
-    const remote = require('electron').remote;
-
-    function minimize(){
-      var window = remote.getCurrentWindow();
-      window.minimize();  
-    }
-
-    function close(){
-      var window = remote.getCurrentWindow();
-      window.close();  
-    }
-    var app = new Vue({
-      el: '#app',
-      data: {
-        msg: '',
-        items: []
-      },
-      methods: {
-        close: function () {
-           close();
-        },
-        resumeItem: function (itemIndex) {
-          this.items[itemIndex].start();
-        },
-        
-        pauseItem: function (itemIndex) {
-          this.items[itemIndex].stop();
-        },
-        
-        secondsToTimeString: function(seconds){
-          var d = Math.floor(seconds / 86400);
-          seconds -= 86400 * d;
-          var h = Math.floor(seconds / 3600);
-          seconds -= 3600 * h;
-          var m = Math.floor(seconds / 60);
-          seconds -= 60 * m;
-          str = '';
-          if(d > 0) { 
-            d = (10 > d)? '0' + d : d;
-            str += `${d}d `; 
-          }
-          if(h > 0) { 
-            d = (10 > h)? '0' + h : h;
-            str += `${h}h `; 
-          }
-          if(m > 0) { 
-            m = (10 > m)? '0' + m : m;
-            str += `${m}m `; 
-          }
-          seconds = (10 > seconds)? '0' + seconds : seconds;
-          str += `${seconds}s `;
-          
-          return str;
-        },
-        
-        addItem: function() {
-          var that = this;
-          var Item = function (){
-            this.startTime = new Date();
-            this.durationTime = 0;
-            this.msg= that.msg;
-            this.timer = null;
-            this.show = true;
-          };
-          Item.prototype.start = function(){
-            var that = this;
-            that.timer = setInterval(function(){
-              that.durationTime ++;
-            }, 1000); 
-          };
-          Item.prototype.stop = function(){
-            clearInterval(this.timer);
-            this.timer = null;
-          };
-          var newItem = new Item();
-          this.items.push(newItem);
-          newItem.start();
-          that.msg = '';
-        },
-        removeItem: function(itemIndex) {
-          this.items[itemIndex].stop();
-          this.items.splice(itemIndex, 1);
-        }
-      },
-      
-      mounted: function() {
-      }
-    });
-=======
   <script type="x-template" id="item-compo-tmpl"> 
     <div class="static-grid">
       <div class="static-grid-cell static-grid-cell-msg" >
@@ -154,8 +55,7 @@
         <button @click="$parent.resumeItem(index)" class="btn btn-play btn-mini" v-else></button>
         <button @click="item.show = false" class="btn btn-delete btn-mini"></button>
       </div>
-    </div>
->>>>>>> a65b1cd6a10c19ebea937b9f9f550a847943e99f
+    </div> 
   </script>
   
   <script src="js/script.js"></script>
