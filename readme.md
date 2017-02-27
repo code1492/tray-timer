@@ -4,15 +4,15 @@
 * Timer app for supporting issue tracking system (JIRA, REDMINE etc)
 
 ## Tech stack
-
 * electron
 * Vue
 * HTML
 * jQuery
 
+## Screenshot
+![screenshot](/../master/assets/screenshot.png?raw=true "screenshot")
+
 ## Run/Build source
-
-
 First, [install Nodejs(NPM)](https://nodejs.org/ko/)
 
 Prepaire for running app  
