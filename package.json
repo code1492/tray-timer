@@ -14,8 +14,8 @@
   },
   "main": "main.js",
   "scripts": {
-    "build_windows": "electron-packager . Timer --platform=win32 --arch=all --version=0.36.0 --icon=Icon.icns",
-    "build_mac": "electron-packager . Timer --platform=darwin --arch=all --version=0.36.0 --icon=Icon.icns",
+    "build_windows": "electron-packager . Timer --platform=win32 --arch=all --version=0.36.0 --icon=Icon.icns --overwrite",
+    "build_mac": "electron-packager . Timer --platform=darwin --arch=all --version=0.36.0 --icon=Icon.icns --overwrite",
     "start": "electron ."
   }
 }

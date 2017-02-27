@@ -192,7 +192,7 @@
     <div class="static-grid static-grid-form">
       <div class="static-grid-cell">
         <div>
-          <input type="text" v-model="msg" @keyup.enter="addItem">
+          <input type="text" v-model="msg">
         </div>
       </div>
       <div class="static-grid-cell static-grid-cell-btns">
@@ -247,18 +247,18 @@
           str = '';
           if(d > 0) { 
             d = (10 > d)? '0' + d : d;
-            str += `${d}일 `; 
+            str += `${d}d `; 
           }
           if(h > 0) { 
             d = (10 > h)? '0' + h : h;
-            str += `${h}시간 `; 
+            str += `${h}h `; 
           }
           if(m > 0) { 
             m = (10 > m)? '0' + m : m;
-            str += `${m}분 `; 
+            str += `${m}m `; 
           }
           seconds = (10 > seconds)? '0' + seconds : seconds;
-          str += `${seconds}초 `;
+          str += `${seconds}s `;
           
           return str;
         },
