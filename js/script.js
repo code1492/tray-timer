@@ -114,7 +114,10 @@ var app = new Vue ({
       Item.prototype.start = function(){
         var that = this;
         that.timer = setInterval(function(){
-          that.durationTime ++;
+			var currentTime = new Date();
+			var diff = currentTime.getTime() - that.startTime.getTime();
+			var msec = diff;
+			that.durationTime = Math.floor(diff/1000);
         }, 1000); 
       };
       Item.prototype.stop = function(){
